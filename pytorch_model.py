@@ -47,10 +47,10 @@ class SoundNet8_pytorch(nn.Module):
             nn.ReLU(inplace=True)
         )
         self.conv8 = nn.Sequential(
-            nn.Conv2d(1024, 1000, (8,1), (2,1), (0,0), bias=True),
+            nn.Conv2d(1024, 1000, (1,1), (2,1), (0,0), bias=True),
         ) 
         self.conv8_2 = nn.Sequential(
-            nn.Conv2d(1024, 401, (8,1), (2,1), (0,0), bias=True)
+            nn.Conv2d(1024, 401, (1,1), (2,1), (0,0), bias=True)
         )
 
     def forward(self, x):
